@@ -1,0 +1,55 @@
+/* public/css/custom.css */
+
+/* Đảm bảo rằng container có đủ không gian xung quanh */
+.container {
+    padding: 20px;
+}
+
+/* Tựa đề chính */
+h1.text-center.mb-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ee4d2d; /* Đổi màu thành #ee4d2d */
+}
+
+/* Thẻ card */
+.card {
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Ảnh của sản phẩm */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Tiêu đề sản phẩm */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Giá sản phẩm */
+.card-text {
+    color: #28a745;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Nút xem chi tiết */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
