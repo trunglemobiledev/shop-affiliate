@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/welcome', function () {
     return view('welcome');
 });
+Route::get('/login', function () {
+    return view('admin.auth.login');
+});
 
 
 Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');

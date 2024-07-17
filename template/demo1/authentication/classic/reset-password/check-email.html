@@ -10,27 +10,27 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 -->
 <!DOCTYPE html>
 <html class="h-full" data-theme="true" data-theme-mode="light" lang="en">
- <head><base href="../../../../">
+ <head><base href="../../../../../">
   <title>
-   Metronic - Tailwind CSS Sign In
+   Metronic - Tailwind CSS Check Email
   </title>
   <meta charset="utf-8"/>
   <meta content="follow, index" name="robots"/>
   <link href="https://keenthemes.com/metronic" rel="canonical"/>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-  <meta content="Sign in page using Tailwind CSS" name="description"/>
+  <meta content="Check email for password reset, styled with Tailwind CSS" name="description"/>
   <meta content="@keenthemes" name="twitter:site"/>
   <meta content="@keenthemes" name="twitter:creator"/>
   <meta content="summary_large_image" name="twitter:card"/>
-  <meta content="Metronic - Tailwind CSS Sign In" name="twitter:title"/>
-  <meta content="Sign in page using Tailwind CSS" name="twitter:description"/>
+  <meta content="Metronic - Tailwind CSS Check Email" name="twitter:title"/>
+  <meta content="Check email for password reset, styled with Tailwind CSS" name="twitter:description"/>
   <meta content="/static/metronic-tailwind-html/dist/assets/media/app/og-image.png" name="twitter:image"/>
   <meta content="https://keenthemes.com/metronic" property="og:url"/>
   <meta content="en_US" property="og:locale"/>
   <meta content="website" property="og:type"/>
   <meta content="@keenthemes" property="og:site_name"/>
-  <meta content="Metronic - Tailwind CSS Sign In" property="og:title"/>
-  <meta content="Sign in page using Tailwind CSS" property="og:description"/>
+  <meta content="Metronic - Tailwind CSS Check Email" property="og:title"/>
+  <meta content="Check email for password reset, styled with Tailwind CSS" property="og:description"/>
   <meta content="/static/metronic-tailwind-html/dist/assets/media/app/og-image.png" property="og:image"/>
   <link href="assets/media/app/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
   <link href="assets/media/app/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -74,76 +74,37 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 		}
   </style>
   <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
-   <div class="card max-w-[370px] w-full">
-    <form action="#" class="card-body flex flex-col gap-5 p-10" id="sign_in_form" method="get">
-     <div class="text-center mb-2.5">
-      <h3 class="text-lg font-semibold text-gray-900 leading-none mb-2.5">
-       Sign in
-      </h3>
-      <div class="flex items-center justify-center font-medium">
-       <span class="text-2sm text-gray-600 me-1.5">
-        Need an account?
-       </span>
-       <a class="text-2sm link" href="html/demo1/authentication/classic/sign-up.html">
-        Sign up
-       </a>
-      </div>
+   <div class="card max-w-[440px] w-full">
+    <div class="card-body p-10">
+     <div class="flex justify-center py-10">
+      <img alt="image" class="dark:hidden max-h-[130px]" src="assets/media/illustrations/30.svg"/>
+      <img alt="image" class="light:hidden max-h-[130px]" src="assets/media/illustrations/30-dark.svg"/>
      </div>
-     <div class="grid grid-cols-2 gap-2.5">
-      <a class="btn btn-light btn-sm justify-center" href="#">
-       <img alt="" class="size-3.5 shrink-0" src="assets/media/brand-logos/google.svg"/>
-       Use Google
+     <h3 class="text-lg font-semibold text-gray-900 text-center mb-3">
+      Check your email
+     </h3>
+     <div class="text-2sm font-medium text-center text-gray-600 mb-7.5">
+      Please click the link sent to your email
+      <a class="text-2sm text-gray-800 font-medium hover:text-primary-active" href="#">
+       bob@reui.io
       </a>
-      <a class="btn btn-light btn-sm justify-center" href="#">
-       <img alt="" class="size-3.5 shrink-0 dark:hidden" src="assets/media/brand-logos/apple-black.svg"/>
-       <img alt="" class="size-3.5 shrink-0 light:hidden" src="assets/media/brand-logos/apple-white.svg"/>
-       Use Apple
+      <br/>
+      to reset your password. Thank you
+     </div>
+     <div class="flex justify-center mb-5">
+      <a class="btn btn-primary flex justify-center" href="html/demo1/authentication/classic/reset-password/change-password.html">
+       Skip for now
       </a>
      </div>
-     <div class="flex items-center gap-2">
-      <span class="border-t border-gray-200 w-full">
+     <div class="flex items-center justify-center gap-1">
+      <span class="text-xs font-medium text-gray-600">
+       Didn’t receive an email?
       </span>
-      <span class="text-2xs text-gray-500 font-medium uppercase">
-       Or
-      </span>
-      <span class="border-t border-gray-200 w-full">
-      </span>
+      <a class="text-xs font-medium link" href="html/demo1/authentication/classic/reset-password/enter-email.html">
+       Resend
+      </a>
      </div>
-     <div class="flex flex-col gap-1">
-      <label class="form-label text-gray-900">
-       Email
-      </label>
-      <input class="input" placeholder="email@email.com" type="text" value=""/>
-     </div>
-     <div class="flex flex-col gap-1">
-      <div class="flex items-center justify-between gap-1">
-       <label class="form-label text-gray-900">
-        Password
-       </label>
-       <a class="text-2sm link shrink-0" href="html/demo1/authentication/classic/reset-password/enter-email.html">
-        Forgot Password?
-       </a>
-      </div>
-      <label class="input" data-toggle-password="true">
-       <input name="user_password" placeholder="Enter Password" type="password" value=""/>
-       <button class="btn btn-icon" data-toggle-password-trigger="true">
-        <i class="ki-filled ki-eye text-gray-500 toggle-password-active:hidden">
-        </i>
-        <i class="ki-filled ki-eye-slash text-gray-500 hidden toggle-password-active:block">
-        </i>
-       </button>
-      </label>
-     </div>
-     <label class="checkbox-group">
-      <input class="checkbox checkbox-sm" name="check" type="checkbox" value="1"/>
-      <span class="checkbox-label">
-       Remember me
-      </span>
-     </label>
-     <button class="btn btn-primary flex justify-center grow">
-      Sign In
-     </button>
-    </form>
+    </div>
    </div>
   </div>
   <!--end::Page layout-->

@@ -12,25 +12,25 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 <html class="h-full" data-theme="true" data-theme-mode="light" lang="en">
  <head><base href="../../../../">
   <title>
-   Metronic - Tailwind CSS Sign In
+   Metronic - Tailwind CSS 2FA
   </title>
   <meta charset="utf-8"/>
   <meta content="follow, index" name="robots"/>
   <link href="https://keenthemes.com/metronic" rel="canonical"/>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-  <meta content="Sign in page using Tailwind CSS" name="description"/>
+  <meta content="Two-factor authentication page, using Tailwind CSS" name="description"/>
   <meta content="@keenthemes" name="twitter:site"/>
   <meta content="@keenthemes" name="twitter:creator"/>
   <meta content="summary_large_image" name="twitter:card"/>
-  <meta content="Metronic - Tailwind CSS Sign In" name="twitter:title"/>
-  <meta content="Sign in page using Tailwind CSS" name="twitter:description"/>
+  <meta content="Metronic - Tailwind CSS 2FA" name="twitter:title"/>
+  <meta content="Two-factor authentication page, using Tailwind CSS" name="twitter:description"/>
   <meta content="/static/metronic-tailwind-html/dist/assets/media/app/og-image.png" name="twitter:image"/>
   <meta content="https://keenthemes.com/metronic" property="og:url"/>
   <meta content="en_US" property="og:locale"/>
   <meta content="website" property="og:type"/>
   <meta content="@keenthemes" property="og:site_name"/>
-  <meta content="Metronic - Tailwind CSS Sign In" property="og:title"/>
-  <meta content="Sign in page using Tailwind CSS" property="og:description"/>
+  <meta content="Metronic - Tailwind CSS 2FA" property="og:title"/>
+  <meta content="Two-factor authentication page, using Tailwind CSS" property="og:description"/>
   <meta content="/static/metronic-tailwind-html/dist/assets/media/app/og-image.png" property="og:image"/>
   <link href="assets/media/app/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
   <link href="assets/media/app/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -74,74 +74,41 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 		}
   </style>
   <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
-   <div class="card max-w-[370px] w-full">
-    <form action="#" class="card-body flex flex-col gap-5 p-10" id="sign_in_form" method="get">
-     <div class="text-center mb-2.5">
-      <h3 class="text-lg font-semibold text-gray-900 leading-none mb-2.5">
-       Sign in
+   <div class="card max-w-[380px] w-full" id="2fa_form">
+    <form action="#" class="card-body flex flex-col gap-5 p-10" method="post">
+     <img alt="image" class="dark:hidden h-20 mb-2" src="assets/media/illustrations/34.svg"/>
+     <img alt="image" class="light:hidden h-20 mb-2" src="assets/media/illustrations/34-dark.svg"/>
+     <div class="text-center mb-2">
+      <h3 class="text-lg font-semibold text-gray-900 mb-5">
+       Verify your phone
       </h3>
-      <div class="flex items-center justify-center font-medium">
-       <span class="text-2sm text-gray-600 me-1.5">
-        Need an account?
+      <div class="flex flex-col">
+       <span class="text-2sm text-gray-600 font-medium mb-1.5">
+        Enter the verification code we sent to
        </span>
-       <a class="text-2sm link" href="html/demo1/authentication/classic/sign-up.html">
-        Sign up
+       <a class="text-sm font-semibold text-gray-900" href="#">
+        ****** 7859
        </a>
       </div>
      </div>
-     <div class="grid grid-cols-2 gap-2.5">
-      <a class="btn btn-light btn-sm justify-center" href="#">
-       <img alt="" class="size-3.5 shrink-0" src="assets/media/brand-logos/google.svg"/>
-       Use Google
+     <div class="flex flex-wrap justify-center gap-2.5">
+      <input class="input focus:border-primary-clarity focus:ring focus:ring-primary-clarity size-10 shrink-0 px-0 text-center" maxlength="1" name="code_0" placeholder="" type="text" value=""/>
+      <input class="input focus:border-primary-clarity focus:ring focus:ring-primary-clarity size-10 shrink-0 px-0 text-center" maxlength="1" name="code_1" placeholder="" type="text" value=""/>
+      <input class="input focus:border-primary-clarity focus:ring focus:ring-primary-clarity size-10 shrink-0 px-0 text-center" maxlength="1" name="code_2" placeholder="" type="text" value=""/>
+      <input class="input focus:border-primary-clarity focus:ring focus:ring-primary-clarity size-10 shrink-0 px-0 text-center" maxlength="1" name="code_3" placeholder="" type="text" value=""/>
+      <input class="input focus:border-primary-clarity focus:ring focus:ring-primary-clarity size-10 shrink-0 px-0 text-center" maxlength="1" name="code_4" placeholder="" type="text" value=""/>
+      <input class="input focus:border-primary-clarity focus:ring focus:ring-primary-clarity size-10 shrink-0 px-0 text-center" maxlength="1" name="code_5" placeholder="" type="text" value=""/>
+     </div>
+     <div class="flex items-center justify-center mb-2 font-medium">
+      <span class="text-xs text-gray-600 me-1.5">
+       Didn’t receive a code? (37s)
+      </span>
+      <a class="text-xs link" href="html/demo1/authentication/classic/sign-in.html">
+       Resend
       </a>
-      <a class="btn btn-light btn-sm justify-center" href="#">
-       <img alt="" class="size-3.5 shrink-0 dark:hidden" src="assets/media/brand-logos/apple-black.svg"/>
-       <img alt="" class="size-3.5 shrink-0 light:hidden" src="assets/media/brand-logos/apple-white.svg"/>
-       Use Apple
-      </a>
      </div>
-     <div class="flex items-center gap-2">
-      <span class="border-t border-gray-200 w-full">
-      </span>
-      <span class="text-2xs text-gray-500 font-medium uppercase">
-       Or
-      </span>
-      <span class="border-t border-gray-200 w-full">
-      </span>
-     </div>
-     <div class="flex flex-col gap-1">
-      <label class="form-label text-gray-900">
-       Email
-      </label>
-      <input class="input" placeholder="email@email.com" type="text" value=""/>
-     </div>
-     <div class="flex flex-col gap-1">
-      <div class="flex items-center justify-between gap-1">
-       <label class="form-label text-gray-900">
-        Password
-       </label>
-       <a class="text-2sm link shrink-0" href="html/demo1/authentication/classic/reset-password/enter-email.html">
-        Forgot Password?
-       </a>
-      </div>
-      <label class="input" data-toggle-password="true">
-       <input name="user_password" placeholder="Enter Password" type="password" value=""/>
-       <button class="btn btn-icon" data-toggle-password-trigger="true">
-        <i class="ki-filled ki-eye text-gray-500 toggle-password-active:hidden">
-        </i>
-        <i class="ki-filled ki-eye-slash text-gray-500 hidden toggle-password-active:block">
-        </i>
-       </button>
-      </label>
-     </div>
-     <label class="checkbox-group">
-      <input class="checkbox checkbox-sm" name="check" type="checkbox" value="1"/>
-      <span class="checkbox-label">
-       Remember me
-      </span>
-     </label>
      <button class="btn btn-primary flex justify-center grow">
-      Sign In
+      Continue
      </button>
     </form>
    </div>
